@@ -4,9 +4,13 @@ import Link from "next/link";
 import { useState } from "react";
 import Hamburger from "../icons/Hamburger";
 import Close from "../icons/Close";
-import { raleway } from "../layout";
+import { Raleway } from "next/font/google";
 
 export default function Header() {
+	const raleway = Raleway({
+		weight: ["400", "700"],
+		subsets: ["latin"],
+	});
 	const [showMobileMenu, setShowMobileMenu] = useState(false);
 
 	return (
