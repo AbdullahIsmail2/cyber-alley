@@ -24,6 +24,9 @@ const config: Config = {
 				bgtwo: "#A5A2CD",
 				bgthree: "#F9EDC8",
 			},
+			padding: {
+				safe: "env(safe-area-inset-top)",
+			},
 		},
 	},
 	plugins: [],
