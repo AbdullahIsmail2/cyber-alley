@@ -1,10 +1,7 @@
-import { Raleway } from "next/font/google";
+import { raleway } from "../fonts";
 
 export default function Hero() {
-	const raleway = Raleway({
-		weight: ["400", "700"],
-		subsets: ["latin"],
-	});
+	
 	return (
 		<section
 			className={`min-h-screen px-10 flex flex-col items-center justify-center ${raleway.className} text-center gap-8 md:gap-10 bg-custom-gradient`}
