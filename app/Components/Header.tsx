@@ -46,19 +46,19 @@ export default function Header() {
 				} transform duration-[1000ms] ease-out `}
 			>
 				<ul className="flex flex-col xs:flex-row gap-10 xs:gap-x-5">
-					<li className="hover:text-myblue">
+					<li className="hover:text-myblue font-bold xs:font-normal">
 						<Link href="">Home</Link>
 					</li>
-					<li className="hover:text-myblue ">
+					<li className="hover:text-myblue font-bold xs:font-normal">
 						<Link href="/about">About</Link>
 					</li>
-					<li className="hover:text-myblue">
+					<li className="hover:text-myblue font-bold xs:font-normal">
 						<Link href="/services">Services</Link>
 					</li>
-					<li className="hover:text-myblue">
+					<li className="hover:text-myblue font-bold xs:font-normal">
 						<Link href="/blog">Blog</Link>
 					</li>
-					<li className="hover:text-myblue">
+					<li className="hover:text-myblue font-bold xs:font-normal">
 						<Link href="/contact">Contact</Link>
 					</li>
 				</ul>
