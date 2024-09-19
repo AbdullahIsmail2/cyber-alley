@@ -24,7 +24,7 @@ export default function Header() {
 			>
 				<span
 					className={`transform transition-all duration-500 ease-in-out top-7 right-8 ${
-						showMobileMenu ? "opacity-0 scale-50" : "opacity-100 scale-100"
+						showMobileMenu ? "hidden opacity-0 scale-50" : "block opacity-100 scale-100"
 					}`}
 				>
 					<Hamburger />
