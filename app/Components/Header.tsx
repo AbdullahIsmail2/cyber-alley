@@ -7,7 +7,6 @@ import Close from "../icons/Close";
 import { raleway } from "../fonts";
 
 export default function Header() {
-
 	const [showMobileMenu, setShowMobileMenu] = useState(false);
 
 	return (
@@ -24,7 +23,9 @@ export default function Header() {
 			>
 				<span
 					className={`transform transition-all duration-500 ease-in-out top-7 right-8 ${
-						showMobileMenu ? "hidden opacity-0 scale-50" : "block opacity-100 scale-100"
+						showMobileMenu
+							? "hidden opacity-0 scale-50"
+							: "block opacity-100 scale-100"
 					}`}
 				>
 					<Hamburger />
@@ -41,24 +42,25 @@ export default function Header() {
 			</button>
 
 			<nav
-				className={`fixed top-0 bottom-0 z-40 py-40 px-10 xs:px-0  right-0 xs:static xs:left-auto xs:right-auto xs:top-auto xs:bottom-auto xs:py-0  xs:h-full xs:flex xs:items-center ${
-					showMobileMenu ? "left-0 glass" : "left-[100%]"
-				} transform duration-[1000ms] ease-out `}
+				className={`fixed top-0 bottom-0 bg-white z-40 py-40 px-10 xs:px-0  right-0 xs:static xs:left-auto xs:right-auto xs:top-auto xs:bottom-auto xs:py-0  xs:h-full xs:flex xs:items-center ${
+					showMobileMenu ? "left-[-2%]" : "left-[100%]"
+				} transform duration-[1000ms] ease-out border-l-[1px] border-black xs:border-none`}
 			>
+				<span className="absolute top-8 left-10 xs:hidden">Logo</span>
 				<ul className="flex flex-col xs:flex-row gap-10 xs:gap-x-5">
-					<li className="hover:text-myblue font-bold xs:font-normal">
+					<li className="hover:text-myblue ">
 						<Link href="">Home</Link>
 					</li>
-					<li className="hover:text-myblue font-bold xs:font-normal">
+					<li className="hover:text-myblue">
 						<Link href="/about">About</Link>
 					</li>
-					<li className="hover:text-myblue font-bold xs:font-normal">
+					<li className="hover:text-myblue">
 						<Link href="/services">Services</Link>
 					</li>
-					<li className="hover:text-myblue font-bold xs:font-normal">
+					<li className="hover:text-myblue">
 						<Link href="/blog">Blog</Link>
 					</li>
-					<li className="hover:text-myblue font-bold xs:font-normal">
+					<li className="hover:text-myblue">
 						<Link href="/contact">Contact</Link>
 					</li>
 				</ul>

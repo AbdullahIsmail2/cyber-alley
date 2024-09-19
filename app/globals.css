@@ -13,21 +13,18 @@ body {
 }
 body {
 	color: #171717;
-	background-color: transparent;
 	font-family: Arial, Helvetica, sans-serif;
-	padding-top: env(safe-area-inset-top);
-	padding-bottom: env(safe-area-inset-bottom);
-	padding-left: env(safe-area-inset-left);
-	padding-right: env(safe-area-inset-right);
+	
+
 }
 
 .bg-custom-gradient {
-	background: linear-gradient(
+	/* background: linear-gradient(
 		to right,
 		rgba(175, 247, 236, 0.5),
 		rgba(165, 162, 205, 0.5),
 		rgba(249, 237, 200, 0.5)
-	);
+	); */
 }
 
 .glass {
