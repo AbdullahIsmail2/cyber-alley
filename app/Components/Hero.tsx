@@ -20,9 +20,7 @@ export default function Hero() {
 			<button className="bg-myblue text-white w-[150px] py-4">
 				Get started
 			</button>
-			<div className="half-circle">
-				H
-			</div>
+
 		</section>
 	);
 }
