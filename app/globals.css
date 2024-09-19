@@ -36,5 +36,5 @@ body {
 
 .glass {
 	backdrop-filter: blur(15px) !important;
-	--webkit-backdrop-filter: blur(10px) !important;
+	-webkit-backdrop-filter: blur(10px) !important;
 }
