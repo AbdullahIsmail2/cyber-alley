@@ -1,5 +1,5 @@
 import "./globals.css";
-
+import { Analytics } from "@vercel/analytics/react"
 import Header from "./Components/Header";
 
 export default function RootLayout({
@@ -12,6 +12,7 @@ export default function RootLayout({
 			<body className={`antialiased`}>
 				<Header />
 				{children}
+        <Analytics />
 			</body>
 		</html>
 	);
